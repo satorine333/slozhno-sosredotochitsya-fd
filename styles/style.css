@@ -111,9 +111,9 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .header__title {
-    font-size:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
@@ -316,7 +316,7 @@
   outline: 1px solid var(--text-color, #f1b2ce);
 }
 
-.ways {
+.section__cause_title-how {
   color: var(--accent-color-with-background, #000028);
   background-color: var(--accent-color, #ff0070);
   font-size: 18px;
@@ -487,8 +487,8 @@
     min-height: 768px;
   }
 
-  .footer_header {
+  @media (min-width: 768px) {
+  .footer__header {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-}
-}
+  }
