@@ -1,20 +1,20 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
-  --accent-color: #ff0070;
-  --accent-color-with-background: #000028;
-  --accent-heading-color: #db00ff;
-  --accent-color-menu: rgba(255, 0, 112, 0.4);
-  --accent-color-head: #ff0070;
-  --accent-decor-color:#ff0070;
-  --text-color: #f1b2ce;
-  --button-hover-color: #ff007066;
-  --heading-color: #ff0070;
-  --decorative-bracket-color: #ff0070;
-  --decoration-color: #ff0070;
-  --cover-image: url(../images/cover-image-dark.png);
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+  --background-image: url(../images/cover-image-dark.png);
+  --background-color: rgba(0, 0, 40, 1);
+  --accent-color: rgba(255, 0, 112, 1);
+  --title-color: rgba(219, 0, 255, 1);
+  --decor-color: rgba(255, 0, 112, 1);
+  --decor-text-color: rgba(0, 0, 40, 1);
+  --text-color: rgba(241, 178, 206, 1);
+  --section-title-color: rgba(255, 0, 112, 1);
+  --link-shadow-color: rgba(255, 0, 112, 1);
+  --button-hover-border-color: rgba(255, 0, 112, 0.4);
+}
+
+:root.theme-dark .header__rec-decoration {
+  display: flex;
 }
